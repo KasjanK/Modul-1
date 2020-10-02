@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Uppgift 1
+      var myVar = 15;
+      let myLet = "this is a let";
+      const myConst = 2020;
+
+      // uppgift 2
+      let isABoolean = true;
+      let number = 5;
+      let string = "jag älskar kylskåp";
+      let myObject = {
+        firstName: "Robert",
+        lastName: "Olsson",
+        age: 28,
+        city: "Svedala",
+      };
+      let myArray = [3, 8, 68, 5, 1];
+
+      // uppgift 3
+      function addition(a, b) {
+        return a + b;
+      }
+      addition(2, 3);
+      let sum = addition(2, 3);
+      console.log("Summan blir: " + sum);
+
+      // uppgift 4
+      console.log(Date());
+
+      // uppgift 5
+      let person = {
+        name: "jakob",
+        age: 22,
+        city: "Malmö",
+        print() {
+          console.log(person);
+        },
+      };
+
+      person.print();
+
+      // uppgift 6
+      let myArr = [4, 8, 15, 16, 23, 42];
+      console.log(myArr);
+      console.log(myArr[5]);
+
+      let underTwenty = myArr.filter((number) => number < 20);
+      console.log(underTwenty);
+
+      let timesTwo = underTwenty.map((x) => x * 2);
+      console.log(timesTwo);
+
+      timesTwo.forEach((element) => console.log(element));
+
+      // uppgift 7
+      let i = 1;
+      while (i < 7) {
+        if (i < 4) {
+          console.log("loop " + i);
+          i++;
+        } else {
+          console.log("Almost done...");
+          i++;
+        }
+      }
+      console.log("Done!");
+    </script>
+  </body>
+</html>
